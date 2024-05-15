@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+// paleta de colores
+$color1: black;
+$color2:blueviolet;
+$color3:white;
+$color4:#333;
+$color5: springgreen;
+//fuentes
+$font1:"Brygada 1918", serif;
+//operadores
+$ancho: 100%;
+$largo: 700px;
+$ancho1: 700px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font1;
+}
+body{
+    background-color: $color2;
+}
+.navbar{
+    background-color: $color1 !important;
+}
+.nav-link{
+    color: $color3 !important;
+}
+main{
+    background-image: url(../img/jumbotroncampo2654157_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height:$largo / 2;
+    color: $color3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call{
+    width: $ancho - 10;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 20px;
+    border: 4px solid $color2;
+}
+h1{
+    color:$color2;
+    font-size: 20px;
+}
+.call p{
+    margin-bottom: 20px;
+}
+.call a{
+    background-color: $color2;
+    color: $color3;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.call a:hover{
+    background-color: $color4;
+}
+h2{
+    background-color: $color2;
+    font-size: 45px;
+}
+.nosotros{
+    display: flex;
+    background-color: $color5;
+    color: $color1;
+}
+.nleft{
+    background-image: url(../img/campo-5094130_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height:($alto / 2)-100;
+    width: ($ancho / 2)+100;
+    display: flex;
+}
+.nleft:hover{
+    transform: scale(1.09);
+    filter: grayscale(100%);
+}
+.nright{
+    padding: 20px;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+h4{
+    text-align: center;
+    background-color: $color2;
+    padding: 20px;
+    color: $color3;
+    text-shadow: 0 0 5px #000;
+    font-size: 35px;
+}
+.galeria{
+    background-color: $color2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 180px);
+    padding: 10px;
+    grid-gap: 10px;
+}
+.item{
+    border: 5px solid #000;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    transition: all 0.7s;
+}
+.item:hover{
+    filter: grayscale(100%);
+    transform: scale(1.09);
+}
+.item1{
+    background-image: url(../img/broccoli-1450274_1280.png);
+}
+.item2{
+    background-image: url(../img/calabaza-4454745_1280.jpg);
+}
+.item3{
+    background-image: url(../img/carrot-juice-1623157_1280.jpg);
+}
+.item4{
+    background-image: url(../img/chauchas1018624_1280.jpg);
+}
+.item5{
+    background-image: url(../img/choclo-8028831_1280.jpg);
+}
+.item6{
+    background-image: url(../img/garlic-139659_1280.jpg);
+}
+.item7{
+    background-image: url(../img/pepinos-849269_1280.jpg);
+}
+.item8{
+    background-image: url(../img/potatoes-1585060_1280.jpg);
+}
+footer{
+    background-color: $color1;
+    color: $color3;
+    text-align: center;
+    padding: 20px;
+}
+footer a{
+    color: $color2;
+    text-decoration: none;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+.what{
+    height: ($alto / 4)-135;
+    width: ($ancho / 4)-135;
+    background-color: $color2;
+    color: $color3;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+}
+.carousel-item{
+    width: auto!important;
+    height: $alto - 100 !important;
+    border-radius: 20px;
+}
+.nosotros1{
+    font-size: 30px;
+    margin-top: 30px;
+    text-decoration:underline;
+    padding-bottom: 30px;
+}
+.section{
+    background-image:url(../img/tractor-5642608_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: $alto / 2 ;
+    color: $color3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* inicio media queries*/
+@media only screen and (min-width:480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,180px);
+    }
+}
