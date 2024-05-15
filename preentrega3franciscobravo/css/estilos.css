@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Brygada 1918", serif;
+}
+body{
+    background-color: blueviolet;
+}
+.navbar{
+    background-color: #000 !important;
+}
+.nav-link{
+    color: #fff !important;
+}
+main{
+    background-image: url(../img/jumbotroncampo2654157_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call{
+    width: 90%;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 20px;
+    border: 4px solid blueviolet;
+}
+h1{
+    color: blueviolet;
+    font-size: 20px;
+}
+.call p{
+    margin-bottom: 20px;
+}
+.call a{
+    background-color: blueviolet;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.call a:hover{
+    background-color: #333;
+}
+h2{
+    background-color: blueviolet;
+    font-size: 45px;
+}
+.nosotros{
+    display: flex;
+    background-color: springgreen;
+    color: #000;
+}
+.nleft{
+    background-image: url(../img/campo-5094130_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 300px;
+    display: flex;
+}
+.nleft:hover{
+    transform: scale(1.09);
+    filter: grayscale(100%);
+}
+.nright{
+    padding: 20px;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+h4{
+    text-align: center;
+    background-color: blueviolet;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    font-size: 35px;
+}
+.galeria{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 180px);
+    padding: 10px;
+    grid-gap: 10px;
+}
+.item{
+    border: 5px solid #000;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    transition: all 0.7s;
+}
+.item:hover{
+    filter: grayscale(100%);
+    transform: scale(1.09);
+}
+.item1{
+    background-image: url(../img/broccoli-1450274_1280.png);
+}
+.item2{
+    background-image: url(../img/calabaza-4454745_1280.jpg);
+}
+.item3{
+    background-image: url(../img/carrot-juice-1623157_1280.jpg);
+}
+.item4{
+    background-image: url(../img/chauchas1018624_1280.jpg);
+}
+.item5{
+    background-image: url(../img/choclo-8028831_1280.jpg);
+}
+.item6{
+    background-image: url(../img/garlic-139659_1280.jpg);
+}
+.item7{
+    background-image: url(../img/pepinos-849269_1280.jpg);
+}
+.item8{
+    background-image: url(../img/potatoes-1585060_1280.jpg);
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+footer a{
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+.what{
+    height: 40px;
+    width: 40px;
+    background-color: blueviolet;
+    color: #fff;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+}
+.carousel-item{
+    width: auto!important;
+    height: 600px!important;
+    border-radius: 20px;
+}
+.nosotros1{
+    font-size: 30px;
+    margin-top: 30px;
+    text-decoration:underline;
+    padding-bottom: 30px;
+}
+.section{
+    background-image:url(../img/tractor-5642608_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* inicio media queries*/
+@media only screen and (min-width:480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,180px);
+    }
+}
