@@ -33,7 +33,7 @@ $s:10px;
     font-family: $font1;
 }
 body{
-    background-color: $color2;
+    background-color: $color3;
 
     .navbar{
     background-color: $color1 !important;
@@ -140,10 +140,10 @@ h4{
             filter: grayscale(100%);
             transform: scale(1.09);
                 }
-    }
-}
+            }
+        }
 .item1{
-    background-image: url(../img/broccoli-1450274_1280.png);
+    background-image: url(./img/broccoli-1450274_1280.png);
 }
 .item2{
     background-image: url(../img/calabaza-4454745_1280.jpg);

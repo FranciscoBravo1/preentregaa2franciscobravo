@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: blueviolet;
+  background-color: white;
 }
 body .navbar {
   background-color: black !important;
@@ -113,7 +113,7 @@ h4 {
 }
 
 .item1 {
-  background-image: url(../img/broccoli-1450274_1280.png);
+  background-image: url(./img/broccoli-1450274_1280.png);
 }
 
 .item2 {
