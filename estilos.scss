@@ -33,7 +33,7 @@ $s:10px;
     font-family: $font1;
 }
 body{
-    background-color: $color3;
+    background-color: $color2;
 
     .navbar{
     background-color: $color1 !important;
@@ -112,6 +112,7 @@ h3{
     font-size: 28px;
     margin-bottom: $s;
     font-size: $m + 10;
+    color: $color1;
 }
 h4{
     text-align: center;
@@ -120,6 +121,9 @@ h4{
     color: $color3;
     text-shadow: 0 0 5px #000;
     font-size: $m + 5;
+}
+h5{
+    color: $color1;
 }
 .galeria{
     background-color: $color2;
