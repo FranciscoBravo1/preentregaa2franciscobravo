@@ -10,13 +10,11 @@
 body {
   background-color: blueviolet;
 }
-
-.navbar {
-  background-color: #000 !important;
+body .navbar {
+  background-color: black !important;
 }
-
-.nav-link {
-  color: #fff !important;
+body .navbar .nav-link {
+  color: white !important;
 }
 
 main {
@@ -24,36 +22,31 @@ main {
   background-size: cover;
   background-position: center;
   height: 350px;
-  color: #fff;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.call {
+main .call {
   width: 90%;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border: 4px solid blueviolet;
 }
-
-h1 {
+main .call h1 {
   color: blueviolet;
   font-size: 20px;
 }
-
-.call p {
+main .call h1 .call p {
   margin-bottom: 20px;
 }
-
-.call a {
+main .call h1 .call p .call a {
   background-color: blueviolet;
-  color: #fff;
+  color: white;
   text-decoration: none;
   padding: 10px 30px;
 }
-
-.call a:hover {
+main .call h1 .call p .call a :hover {
   background-color: #333;
 }
 
@@ -65,7 +58,7 @@ h2 {
 .nosotros {
   display: flex;
   background-color: springgreen;
-  color: #000;
+  color: black;
 }
 
 .nleft {
@@ -73,16 +66,14 @@ h2 {
   background-size: cover;
   background-position: center;
   height: 250px;
-  width: 300px;
+  width: 150%;
   display: flex;
 }
-
 .nleft:hover {
-  transform: scale(1.09);
+  scale: 1.09;
   filter: grayscale(100%);
 }
-
-.nright {
+.nleft:hover .nright {
   padding: 20px;
 }
 
@@ -90,15 +81,20 @@ h3 {
   font-size: 28px;
   margin-bottom: 10px;
   font-size: 40px;
+  color: black;
 }
 
 h4 {
   text-align: center;
   background-color: blueviolet;
   padding: 20px;
-  color: #fff;
+  color: white;
   text-shadow: 0 0 5px #000;
   font-size: 35px;
+}
+
+h5 {
+  color: black;
 }
 
 .galeria {
@@ -109,22 +105,20 @@ h4 {
   padding: 10px;
   grid-gap: 10px;
 }
-
-.item {
+.galeria .item {
   border: 5px solid #000;
   background-position: center;
   background-size: cover;
   border-radius: 7px;
   transition: all 0.7s;
 }
-
-.item:hover {
+.galeria .item:hover {
   filter: grayscale(100%);
   transform: scale(1.09);
 }
 
 .item1 {
-  background-image: url(../img/broccoli-1450274_1280.png);
+  background-image: url(./img/broccoli-1450274_1280.png);
 }
 
 .item2 {
@@ -156,13 +150,12 @@ h4 {
 }
 
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: black;
+  color: white;
   text-align: center;
   padding: 20px;
 }
-
-footer a {
+footer footer a {
   color: blueviolet;
   text-decoration: none;
   font-size: 40px;
@@ -171,9 +164,9 @@ footer a {
 
 .what {
   height: 40px;
-  width: 40px;
+  width: -110%;
   background-color: blueviolet;
-  color: #fff;
+  color: white;
   position: fixed;
   right: 40px;
   bottom: 40px;
@@ -185,12 +178,6 @@ footer a {
   box-shadow: 0 0 5px #000;
 }
 
-.carousel-item {
-  width: auto !important;
-  height: 600px !important;
-  border-radius: 20px;
-}
-
 .nosotros1 {
   font-size: 30px;
   margin-top: 30px;
@@ -198,12 +185,18 @@ footer a {
   padding-bottom: 30px;
 }
 
+.carousel-item {
+  width: auto !important;
+  height: 600px !important;
+  border-radius: 20px;
+}
+
 .section {
   background-image: url(../img/tractor-5642608_1280.jpg);
   background-size: cover;
   background-position: center;
-  height: 250px;
-  color: #fff;
+  height: 350px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
